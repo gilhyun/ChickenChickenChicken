@@ -61,7 +61,7 @@ app.get('/datas', function (req, res) {
 });
 
 // seed
-// sudo mongoimport --host=127.0.0.1:27017 --db chart-datas --collection chickenDatas data.json --jsonArray
+// sudo mongoimport --host=127.0.0.1:27017 --db chart-datas --collection chickenDatas seed.json --jsonArray
 app.get('/chart-datas', dataController.index);
 
 app.listen(8889, function () {
