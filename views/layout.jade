@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title!= title
+    link(rel='stylesheet', href='assets/css/main.css')
+    script(src="bower_components/angular/angular.js")
+    script(src="https://use.fontawesome.com/9aee3d7dac.js")
+  body
+  
+  //
+    nav(class="navbar navbar-default navbar-fixed-top")
+      .container
+        .navbar-brand Chicken!
+  
+  .container-fluid
+    .container-card-fixed    
+      .chart
+        block content
+      .sidebar
+        .profile-box
+          h1.title 
+            span.path 재미로 보는 차트
+            span #{message}
+          .user
+            img(src='assets/img/huc.png', width='35')
+            | gilhyun
+          .chart-description 월요일부터 일요일까지 성별 및 연령별 치킨집 통화기록 통계 입니다. 데이터 출처는 http://data.seoul.go.kr/visual/ 입니다.
+                        
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+    script(src="bower_components/d3/d3.min.js")
+    script(src="bower_components/chartist/dist/chartist.min.js")
+    script(src="bower_components/angular-resource/angular-resource.min.js")
+    script(src="bower_components/ng-table/dist/ng-table.min.js")
+    
+    script(src="assets/js/chart.js")
+    script(src="assets/js/app.js")
+    

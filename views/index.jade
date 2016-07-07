@@ -1,0 +1,24 @@
+extends layout
+block content
+  .chart-header
+    .checkboxs
+      .checkbox.checkbox-color-d.checkbox-circle
+        input(id="check-cha-a", type="checkbox", checked="checked")
+        label(for="check-cha-a") 남
+      .checkbox.checkbox-color-a.checkbox-circle
+        input(id="check-cha-b", type="checkbox", checked="checked")
+        label(for="check-cha-b") 여
+      .checkbox.checkbox-color-c.checkbox-circle
+        input(id="check-cha-c", type="checkbox", checked="checked")
+        label(for="check-cha-c") 10대
+      .checkbox.checkbox-color-b.checkbox-circle
+        input(id="check-cha-d", type="checkbox", checked="checked")
+        label(for="check-cha-d") 20대
+      .checkbox.checkbox-color-e.checkbox-circle
+        input(id="check-cha-e", type="checkbox", checked="checked")
+        label(for="check-cha-e") 30대
+        
+    .right-btns 
+      a(href="/datas", class="btn btn-primary") 상세데이터 보기
+    
+  .ct-chart.ct-golden-section                

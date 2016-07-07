@@ -1,0 +1,161 @@
+//
+// container, chart
+//
+
+.container-card-fixed {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  bottom: 40px;
+  left: 40px;
+  background-color: #fff;//#35aaae
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.04);
+
+  .chart {
+    position: absolute;
+    top: 0;
+    right: 30%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+    .chart-header {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 75px;
+      //border-bottom: 1px solid #eee;
+
+      .checkboxs {
+        padding: 20px 0 0 10px;
+      }
+
+      .checkbox {
+        display: inline-block;
+        margin-left: 20px;
+      }
+
+      .right-btns {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+    }
+
+    .ct-chart {
+      position: absolute;
+      top: 75px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .data-table {
+      position: absolute;
+      top: 75px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      overflow: auto;
+
+      table {
+        
+      }
+    }
+  }
+}
+
+
+//
+//  sidebar
+//
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  background-color: #fff;
+  //border-left: 1px solid #eee;
+}
+
+.profile-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  //background-color: #f9f9f9;
+  //border-bottom: 1px solid #eee;
+
+  background-image: url('/assets/img/chicken.jpg');
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.64;
+  }
+
+  .title {
+    position: relative;
+    font-size: 32px;
+    text-align: left;
+    padding: 30px 20px 0 20px;
+    text-align: left;
+    color: #fff;
+
+    .path {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    span {
+      display: block;
+      text-align: left;
+      padding-top: 20px;
+    }
+  }
+
+  .user {
+    position: relative;
+    font-size: 13px;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 20px;
+
+    img {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+
+  .chart-description {
+    position: relative;
+    padding: 20px;
+    font-weight: 100;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 14px;
+  }
+}
+
+
+//
+// typo
+//
+
+.typo-center {
+  text-align: center;
+}

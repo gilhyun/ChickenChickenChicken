@@ -1,0 +1,17 @@
+extends layout
+block content
+  .chart-header
+    .right-btns 
+      a(href="/", class="btn btn-primary") 차트 보기
+    
+  .data-table
+    div(ng-app='myApp')
+      div(ng-controller='demoController as demo')
+        div(loading-container='demo.tableParams.settings().$loading')
+          table.table.table-condensed.table-bordered.table-striped(ng-table='demo.tableParams')
+            tr(ng-repeat='data in $data')
+              td(data-title="'기준일'") {{data['기준일']}}
+              td(data-title="'요일'") {{data['요일']}}
+              td(data-title="'성별'") {{data['성별']}}
+              td(data-title="'연령대'") {{data['연령대']}}
+              td(data-title="'통화건수'") {{data['통화건수']}}
