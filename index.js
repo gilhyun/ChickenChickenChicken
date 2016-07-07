@@ -1,8 +1,10 @@
 var express = require('express');
+var favicon = require('serve-favicon');
 var app = express();
 
 app.set('view engine', 'jade');
 
+app.use(favicon(__dirname + '/public/favicon.png'));
 app.use(express.static(__dirname + '/public'));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
