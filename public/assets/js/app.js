@@ -20,9 +20,9 @@ angular.module("myApp", ["ngTable", "ngResource"]);
 
 (function() {
   "use strict";
-  
+
   angular.module("myApp").factory("IssueService", ["$resource", function($resource) {
-    return $resource("/api", {
+    return $resource("/chart-datas", {
       state: "open"
     }, {
       query: {
