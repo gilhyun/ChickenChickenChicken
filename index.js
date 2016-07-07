@@ -24,6 +24,6 @@ app.get('/api', function (req, res) {
   res.sendFile(__dirname + '/public/data.json')
 });
 
-app.listen(9000, function () {
-  console.log('Example app listening on port 9000!');
+app.listen(8889, function () {
+  console.log('Example app listening on port 8889!');
 });
