@@ -18,10 +18,22 @@ module.exports = function(grunt) {
           'public/assets/css/main.css': 'public/assets/css/main.less'
         }
       }
+    },
+    cssmin: {
+      options: {
+        shorthandCompacting: false,
+        roundingPrecision: -1
+      },
+      target: {
+        files: {
+          'public/assets/css/main.min.css': ['public/assets/css/main.css']
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.registerTask('default', ['less']);
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.registerTask('default', ['less','cssmin']);
 
 };
