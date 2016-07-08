@@ -70,7 +70,6 @@ function setChart() {
     axisX: {
       showLabel: true,
       showGrid: true,
-      //offset: 0
       labelOffset: {
         x: -10,
         y: -30
@@ -79,7 +78,6 @@ function setChart() {
     axisY: {
       showLabel: true,
       showGrid: true,
-      //offset: 0,
       labelOffset: {
         x: 45,
         y: 12
@@ -100,8 +98,6 @@ function setChart() {
   });
 
   chart.on('draw', function(data) {
-    //seq++;
-
     if(data.type === 'area') {
       seq++;
       data.element.animate({
@@ -148,34 +144,15 @@ function setChart() {
         }
       });
     } else if(data.type === 'grid') {
-      var pos1Animation = {
-        begin: seq * delays,
-        dur: durations,
-        from: data[data.axis.units.pos + '1'] - 30,
-        to: data[data.axis.units.pos + '1'],
-        easing: 'easeOutQuart'
-      };
-
-      var pos2Animation = {
-        begin: seq * delays,
-        dur: durations,
-        from: data[data.axis.units.pos + '2'] - 100,
-        to: data[data.axis.units.pos + '2'],
-        easing: 'easeOutQuart'
-      };
-
-      var animations = {};
-      //animations[data.axis.units.pos + '1'] = pos1Animation;
-      //animations[data.axis.units.pos + '2'] = pos2Animation;
-      animations['opacity'] = {
-        begin: seq * delays,
-        dur: durations,
-        from: 0,
-        to: 1,
-        easing: 'easeOutQuart'
-      };
-
-      data.element.animate(animations);
+      data.element.animate({
+        opacity: {
+          begin: seq * delays,
+          dur: durations,
+          from: 0,
+          to: 1,
+          easing: 'easeOutQuart'
+        }
+      });
     }
   });
 
@@ -193,7 +170,6 @@ function setChart() {
 
 function setToggleChart() {
   $('#check-cha-a').on('click', function(event) {
-    //$('.ct-series-e').toggle();
     $(this).is(':checked') ? $('.ct-series-e').show('slow') : $('.ct-series-e').hide('slow')
   });
 
@@ -214,4 +190,6 @@ function setToggleChart() {
   });
 };
 
-setChart();
+$(function() {
+  setChart();
+});
