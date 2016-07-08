@@ -7,7 +7,7 @@ chartlistjs(D3 라이브러리), angularjs, nodejs 등을 이용한 그래프 �
 
 필요사항
 ---------------
-# node 와 mongodb 가 작동하는 서버에서 실행 되어야 합니다.
+node 와 mongodb 가 작동하는 서버에서 실행 되어야 합니다.
 
 
 
