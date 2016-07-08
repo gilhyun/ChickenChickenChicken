@@ -37,7 +37,7 @@ $ node index.js
 MONGODB=mongodb://127.0.0.1:27017/디비명
 
 # 시드데이터 넣기: seed.json 가 있는 폴더에서 아래 명령어 실행
-$ sudo mongoimport --host=127.0.0.1:27017 --db chart-datas --collection chickenDatas seed.json --jsonArray
+$ sudo mongoimport --host=127.0.0.1:27017 --db 디비명 --collection chickenDatas seed.json --jsonArray
 
 ```
 
