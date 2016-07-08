@@ -16,14 +16,18 @@ node 와 mongodb 가 작동하는 서버에서 실행 되어야 합니다.
 ```bash
 # 깃 저장소 복제
 $ git clone https://github.com/gilhyun/ChickenChickenChicken
-# 복사된 폴더로 이동
+
+# 복제된 폴더로 이동
 $ cd ChickenChickenChicken
+
 # 설치
 $ npm install
 $ bower install
-# 실행
+
+# 서버실행
 $ node index.js
-# 브라우저에서 확인 => http://localhost:8889
+
+# 웹브라우저에서 확인 => http://localhost:8889
 
 ```
 
