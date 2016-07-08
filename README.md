@@ -1,4 +1,4 @@
-chartlistjs(D3 라이브러리), angularjs, nodejs 등을 이용한 그래프 페이지 예제 입니다.
+chartlistjs(D3 라이브러리), angularjs, nodejs 등을 이용한 그래프 예제 입니다.
 
 ![screenshot](s-1.png)
 
@@ -14,7 +14,7 @@ node 와 mongodb 가 작동하는 서버에서 실행 되어야 합니다.
 설치 및 실행
 ---------------
 ```bash
-# 깃 자장소 복사
+# 깃 저장소 복제
 $ git clone https://github.com/gilhyun/ChickenChickenChicken
 # 복사된 폴더로 이동
 $ cd ChickenChickenChicken
