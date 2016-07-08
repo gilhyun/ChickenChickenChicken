@@ -70,12 +70,20 @@ function setChart() {
     axisX: {
       showLabel: true,
       showGrid: true,
-      offset: 0
+      //offset: 0
+      labelOffset: {
+        x: -10,
+        y: -30
+      }
     },
     axisY: {
       showLabel: true,
       showGrid: true,
-      offset: 0,
+      //offset: 0,
+      labelOffset: {
+        x: 45,
+        y: 12
+      },
       labelInterpolationFnc: function(value) {
         return value + '만통'
       }
@@ -92,9 +100,10 @@ function setChart() {
   });
 
   chart.on('draw', function(data) {
-    seq++;
+    //seq++;
 
     if(data.type === 'area') {
+      seq++;
       data.element.animate({
         opacity: {
           begin: seq * delays + 1000,
@@ -104,6 +113,7 @@ function setChart() {
         }
       });
     } else if(data.type === 'line') {
+      seq++;
       data.element.animate({
         opacity: {
           begin: seq * delays + 1000,
@@ -113,6 +123,7 @@ function setChart() {
         }
       });
     } else if(data.type === 'point') {
+      seq++;
       data.element.animate({
         x1: {
           begin: seq * delays,
@@ -154,8 +165,8 @@ function setChart() {
       };
 
       var animations = {};
-      animations[data.axis.units.pos + '1'] = pos1Animation;
-      animations[data.axis.units.pos + '2'] = pos2Animation;
+      //animations[data.axis.units.pos + '1'] = pos1Animation;
+      //animations[data.axis.units.pos + '2'] = pos2Animation;
       animations['opacity'] = {
         begin: seq * delays,
         dur: durations,

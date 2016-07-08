@@ -5,7 +5,6 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import "http://fonts.googleapis.com/earlyaccess/jejugothic.css";
 @font-face {
   font-family: 'FontAwesome';
   src: url('/bower_components/components-font-awesome/fonts/fontawesome-webfont.eot?v=4.6.3');
@@ -9165,6 +9164,16 @@ button.close {
     display: none !important;
   }
 }
+/*
+ * Jeju Gothic (Korean) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Jeju Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf) format('truetype');
+}
 .checkbox {
   padding-left: 20px;
 }
@@ -9422,23 +9431,15 @@ button.close {
   width: inherit;
 }
 .ct-label.ct-vertical.ct-start {
-  position: relative;
   display: block;
   text-align: left;
-  padding-top: 50px;
   width: 80px !important;
-  padding-left: 10px;
   color: #cdd3db;
 }
 .ct-label.ct-horizontal.ct-end {
-  position: relative;
-  top: -30px;
-  right: 10px;
   display: block;
   text-align: right;
-  padding-left: 10px;
   color: #cdd3db;
-  height: 30px !important;
 }
 .ct-chart .ct-series.ct-series-a .ct-area {
   fill: rgba(255, 90, 0, 0.8);
@@ -9532,8 +9533,8 @@ button.close {
   position: absolute;
   top: 75px;
   right: 0;
-  bottom: 0;
-  left: 0;
+  bottom: -30px;
+  left: -40px;
 }
 .container-card-fixed .chart .data-table {
   position: absolute;

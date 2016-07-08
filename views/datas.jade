@@ -10,7 +10,6 @@ block content
         div(loading-container='demo.tableParams.settings().$loading')
           table.table.table-condensed.table-bordered.table-striped(ng-table='demo.tableParams')
             tr(ng-repeat='data in $data')
-              td(data-title="'기준일'") {{data.date}}
               td(data-title="'요일'") {{data.week}}
               td(data-title="'성별'") {{data.gender}}
               td(data-title="'연령대'") {{data.age}}
